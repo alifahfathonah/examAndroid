@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormLogin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:background="@drawable/background"
+        android:contentDescription="@string/todo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="158sp"
+        android:layout_height="71sp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="122sp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/exam_cic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="295dp"
+        android:layout_height="309dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/login_page"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView3"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/title_login_page"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="265dp"
+                android:layout_height="44dp"
+                android:layout_below="@id/textView4"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/username"
+                android:hint="@string/username"
+                android:inputType="number"
+                android:paddingStart="45dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="265dp"
+                android:layout_height="44dp"
+                android:layout_below="@id/edt_username"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="45dp"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_password"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_login"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/forgot"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
